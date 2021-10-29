@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+}
+header{
+    background-color: #F8F7F7;
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+#logo img{
+    height: 120px;
+}
+body{
+    background-color: #242539;
+}
+/* Form style  */
+main{
+    display: flex;
+    justify-content: center;
+}
+#form{
+    width: 770px;
+    max-width: 770px;
+    padding: 0.5rem;
+    text-align: center;
+}
+#form fieldset{
+    background-color: #DEDEDE;
+    border-radius: 10px;
+    border-color: rgba(255, 255, 255, 0.0);
+}
+
+#title h1{
+    font-family: Roboto;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    color: #7D7382;
+    Font-style: Regular;
+    Line-height: 27px  
+}
+hr{
+    margin-top: 0.5rem;
+}
+#seta{
+    margin-top: 1rem;
+}
+#seta img{
+    height: 35px;
+    width: 50px;
+}
+#block{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 90px 90px 90px;
+    column-gap: 110px;
+   
+}
+#seta{
+    display: flex;
+    justify-content: center;
+}
+.bg{
+    background-color: #F8F7F7;
+    
+}
+.bg-top{
+    border-radius: 10px 10px 0px 0px;
+}
+.bg-botton{
+    border-radius: 0px 0px 10px 10px;
+}
+.input-block{
+    text-align: left;
+    width: 100%;
+    padding: 1rem;
+
+}
+.input-block label{
+    Font-family: Roboto;
+    Font-style: Regular;
+    Font-size: 16px;
+    Line-height: 27px;
+    Line-height: 100%;
+    Fill: Solid;
+    color:#7D7382;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+.input-block select{
+    width: 300px;
+    border:1px solid #7D7382;
+    height: 44px;
+    border-radius: 10px;
+    margin-top: 0.2rem;
+    padding-left: 1rem;
+    Font-family: Roboto;
+    Font-style: Regular;
+    Font-size: 15px;
+    Line-height: 27px;
+    Line-height: 100%;
+    Fill: Solid;
+    color:#7D7382;
+    background-image: url('../img/seta_baixo_icone.png');
+    background-repeat: no-repeat;
+    background-position: center right 0.8rem;
+    background-size: 28px;  
+}
+.input-block input{
+    padding-left: 1rem;
+    margin-top: 0.2rem;
+    width: 280px;
+    height: 40px;
+    border:1px solid #7D7382;
+    border-radius: 10px;
+    Font-family: Roboto;
+    Font-style: Regular;
+    Font-size: 15px;
+    Line-height: 27px;
+    Line-height: 100%;
+    Fill: Solid;
+    color:#7D7382;
+    outline: none;
+}
+#celular{
+    background-image: url('../img/icon-whatsapp.svg');
+    background-repeat: no-repeat;
+    background-position: center right 0.8rem;
+    background-size: 28px;  
+}
+.submit-block{
+    margin-top: 1.5rem;
+}
+.submit-block button{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #00BCAD;
+    border-color: rgba(255, 255, 255, 0.0);
+    border-radius: 8px;
+    font-size: 15px;
+    color: #F8F7F7;
+    width: 130px;
+    cursor: pointer;
+    height: 35px;
+    
+}
+@media only screen and (min-height: 900px) {
+    header{
+        height: 150px;
+    }
+    #logo img{
+        height: 100%;
+    }
+    main{
+        margin-top: 5rem;
+    }
+}
+@media only screen and (min-height: 1000px) {
+    #title h1{
+        font-size: 35px;
+    }
+    header{
+        height: 200px;
+    }
+    main{
+        height: 800px;
+    }
+    #logo img{
+        height: 100%;
+    }
+    #form {
+        width: 1200px;
+        max-width: 1200px;
+    }
+    #form fieldset{   
+        height: 90%;
+    }
+    #block {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: 500px 500px;
+        grid-template-rows: 130px 130px 130px;
+    }
+    .input-block select{
+        width:495px;
+        height: 70px;
+        Font-size: 25px;
+    }
+    .input-block label{
+        Font-size: 25px;
+    }
+    .input-block input{
+        width: 95%;
+        height: 70px;
+        Font-size: 25px;
+    }
+    .submit-block button{
+        width: 200px;
+        height: 60px;
+        font-size: 25px;
+    }
+}
+@media only screen and (min-width: 1950px) {
+    #logo img{
+        height: 100%;
+    }
+    header{
+        height: 300px;
+    }
+    #title{
+        margin-top: 4rem;
+    }
+    #title h1{
+        font-size: 40px;
+        
+    }
+    #form {
+        width: 1200px;
+        max-width: 1200px; 
+        height: 1000px;
+    }
+    #form fieldset{   
+        height: 100%;
+    }
+    #block{
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 150px 150px 150px;
+        column-gap: 200px;
+        margin-top: 4rem;
+    }
+    .input-block label{
+        Font-size: 25px;
+    }
+    .input-block select{
+        width: 465px;
+        height: 94px;
+        Font-size: 25px;
+        
+    }
+    .input-block input{
+        width: 95%;
+        height: 90px;
+        Font-size: 25px;
+    }
+    .submit-block{
+        margin-top: 5rem;
+    }
+    .submit-block button{
+        width: 200px;
+        height: 80px;
+        font-size: 25px;
+    }
+} 
+
+
+@media only screen and (width: 768px) { 
+    hr{
+        margin-top: 2rem;
+    }
+    #logo img{
+        height: 100%;
+    }
+    header{
+        height: 200px;
+    }
+    #block{
+        grid-template-columns: 80% ;
+        grid-template-rows: 130px 130px 130px 130px 130px  130px 130px;
+        
+    }
+    .submit-block{
+        display: flex;
+        justify-content: center;
+    }
+    .input-block{
+       padding: 0rem
+    }
+    .input-block label{
+        font-size: 30px;
+    }
+    .input-block select{
+        width: 100%;
+    }
+    #celular{
+        background-size: 50px;
+    }
+    .input-block select{
+        background-size: 40px
+    }
+    .input-block input{
+        width: 97%;
+    }
+    main{
+        margin-top: 0px;
+    }
+    #form {
+        width: 100%; 
+        padding: 0rem;
+        width: 100%;
+    }
+    #form fieldset{
+        height: 1300px;
+        border-radius: 0px;
+    }
+    .bg, .bg-top, .bg-botton{
+        border: none;
+        background-color: rgba(255, 255, 255, 0.0);
+        
+    }
+    #title{
+        margin-top: 2rem;
+    }
+   
+  }
+
+  @media only screen and (max-width: 630px) {
+
+    #title{
+        margin-top: 1.5rem ;
+    }
+    #form {
+        padding: 0px;
+        margin-top: 0rem;
+        width: 100%;
+    }
+    #form fieldset{
+        width: 100%;
+        border-radius: 0px;
+        padding: 0rem;
+    }
+    #block{
+        grid-template-columns: 90%;
+        grid-template-rows: 110px 110px 110px 110px 110px  110px 110px;
+       
+    }
+    .input-block label{
+        font-size: 20px;
+    }
+    .input-block input{
+        width: 93%;
+        height: 50px;
+        font-size: 20px;
+    }
+    .input-block select{
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+    }
+    
+  } 
+  
+  

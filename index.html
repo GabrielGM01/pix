@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> ..:: Gerar PIX - Sem intermediário | Economize você também ::..</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <?php //<script src="http://code.jquery.com/jquery.js"></script>  ?> -->
+
+    <link rel="stylesheet" href="./style/index_style.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+
+    -->
+    <!-- <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $("#telefone, #celPhone").mask("(00) 0 0000-0000");
+        $("#amount").mask('R$ ###.###.##0,00', {reverse: true});
+    </script>
+     -->
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="./img/logo-pix.png" alt="">
+        </div>
+    </header>
+    <main>
+        <form id="form" action="">
+            <fieldset>
+               <div id="title" >
+                    <h1>Gere seu PIX sem intermediários e envie ao destinário pagador</h1>
+               </div>
+               <hr>
+               <div id="block" >
+                    <div class="bg bg-top bg-top input-block">
+                        <label for="">Valor:</label>
+                        <input type="text" name="" placeholder="R$" id="">
+                    </div>
+                    <div class="bg bg-top input-block">
+                        <label for="tipo">Tipo:</label>
+                        <select name="tipo" id="tipo">
+                            <option value="">CPF</option>
+                            <Option value="">CNPJ</Option>
+                            <option value="">Telefone</option>
+                            <option value="">Email</option>
+                            <option value="">Aleatório</option>
+                        </select>
+                    </div>
+                    <div class="bg  input-block">
+                        <label for="">Descrição do Pagamento:</label>
+                        <input type="text" name="" placeholder="Detalhes do pagamento" id="">
+                    </div>
+                    <div class="bg input-block">
+                        <label for="">Chave Pix:</label>
+                        <input type="text" name="" placeholder="Pix do Recebedor" id="">
+                    </div>
+                    <div class="bg input-block">
+                        <label for="">Celular do Pagador:</label>
+                        <input id="celular" type="text" name="" placeholder="Ex. 61998765432" id="">
+                    </div>
+                    <div class="bg input-block">
+                        <label for="">Nome do Recebedor:</label>
+                        <input type="text" name="" placeholder="Ex. João" id="">
+                    </div>
+                    <div class="bg bg-botton input-block">
+                        <label for="">Código do Pagamento:</label>
+                        <input type="text" name="" placeholder="Controle de pagamento" id="">
+                    </div>
+                    <div class="bg bg-botton input-block">
+                        <label for="">Cidade do recebedor:</label>
+                        <input type="text" name="" placeholder="Ex. Luziânia" id="">
+                    </div>
+               </div>
+               <div class="submit-block">
+                    <button type="submite">GERAR PIX</button>
+               </div>
+            </fieldset>
+        </form>
+    </main>
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <body class="container-fluid">
+<form id="formulario" class="form-vertical" method="post" action="pixgerado.php">
+    <fieldset>
+
+      
+        <legend>
+            <h4>
+            <img src="img/logo-pix.png" width="100px">
+            Gerar PIX
+            </h4>
+            <span>Gere seu PIX sem intermediários e envie ao destinário pagador.</span>
+        </legend>
+
+
+
+        
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="tipochavepix">Tipo:</label>
+            <div class="col-md-4">
+                <select id="tipochavepix" name="tipochavepix" class="form-control">
+                    <option value="cpfcnpj">CPF</option>
+                    <option value="cpfcnpj">CNPJ</option>
+                    <option value="telefone">Telefone</option>
+                    <option value="email">Email</option>
+                    <option value="aleatorio">Aleatório</option>
+                </select>
+            </div>
+        </div>
+
+       
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="chavepix">Chave PIX:</label>
+            <div class="col-md-4">
+                <input id="chavepix" name="chavepix" type="text" placeholder="Chave PIX do Recebedor" class="form-control input-md" required="">
+                <span class="help-block">(sem caracteres especiais)</span>
+            </div>
+        </div>
+
+      
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="merchantname">Nome do Recebedor:</label>
+            <div class="col-md-4">
+                <input id="merchantname" name="merchantname" type="text" placeholder="Nome de quem vai receber o PIX." class="form-control input-md" >
+                <span class="help-block">(sem caracteres especiais - até 25 caracteres)</span>
+            </div>
+        </div>
+
+       
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="merchantcity">Cidade do Recebedor:</label>
+            <div class="col-md-4">
+                <input id="merchantcity" name="merchantcity" type="text" placeholder="Cidade de quem vai receber o PIX" class="form-control input-md">
+                <span class="help-block">(sem caracteres especiais - até 15 caracteres)</span>
+            </div>
+        </div>
+
+     
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="description">Descrição do Pagamento:</label>
+            <div class="col-md-4">
+                <input id="description" name="description" type="text" placeholder="Detalhes sobre o Pagamento" class="form-control input-md" >
+                <span class="help-block">(sem caracteres especiais - até 25 caracteres)</span>
+            </div>
+        </div>
+
+       
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="amount">Valor:</label>
+            <div class="col-md-4">
+                <input id="amount" name="amount" type="text" placeholder="Valor do PIX (R$)" class="form-control input-md" required="">
+                <span class="help-block">(Ex.: “0”, “1.00”, “123.99”)</span>
+            </div>
+        </div>
+
+      
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="txid">Código de Referência:</label>
+            <div class="col-md-4">
+                <input id="txid" name="txid" type="text" placeholder="Código de controle do Pagamento" class="form-control input-md">
+                <span class="help-block">(sem caracteres especiais - até 15 caracteres)</span>
+            </div>
+        </div>
+
+       
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="celPhone">Celular do Pagador:</label>
+            <div class="col-md-4">
+                <input id="celPhone" name="celPhone" type="text" onkeyup="mascaraFone(event)" placeholder="Para compartilhar no Whatsapp" class="form-control input-md">
+                <span class="help-block"> Apenas números(Formato: 61998765432)</span>
+            </div>
+        </div>
+
+
+       
+        <legend></legend>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="send"></label>
+            <div class="col-md-4">
+                <button id="send" name="send" class="btn btn-primary">GERAR PIX</button>
+            </div>
+        </div>
+    </fieldset>
+</form>
+<legend></legend>
+
+
+
+
+<?php
+    /*
+// Dependência do MPDF (para imprimir a imagem do PDF)
+use Mpdf\QrCode\Output;
+use Mpdf\QrCode\QrCode;
+
+try {
+    if($_POST){
+    // COMPOSER
+        require_once 'vendor/autoload.php';
+
+        // URL API
+        $url = 'https://www.brfideliza.com/apipix/api';
+
+        // RECUPERAR DADOS DO FORMULÁRIO
+        $data = array('tipochavepix' => $_POST['tipochavepix'],
+            'chavepix' => $_POST['chavepix'],
+            'merchantname' => $_POST['merchantname'],
+            'merchantcity' => $_POST['merchantcity'],
+            'description' => $_POST['description'],
+            'amount' => $_POST['amount'],
+            'txid' => $_POST['txid']
+        );
+
+        // Parametros da requisição
+        $content = http_build_query($data);
+
+        // PREPARANDO O CONTEÚDO PARA ENVIO À API
+        $context = stream_context_create(array(
+            'http' => array(
+                'method' => 'POST',
+                'header' => "Connection: close\r\n".
+                    "Content-type: application/x-www-form-urlencoded\r\n".
+                    "Content-Length: ".strlen($content)."\r\n",
+                'content' => $content
+            )
+        ));
+        // Realize comunicação com o servidor
+        $contents = file_get_contents($url, null, $context);
+
+        //Parser da resposta Json
+        $resposta = json_decode($contents);
+
+        if($resposta->status === 'success'){
+            $resposta->codigopagamento;
+        }else{
+            throw new Exception('Error.');
+        }
+
+        // PREPARAR PARA IMPRESSÃO
+        // QR-CODE
+        $obQrCode = new QrCode($resposta->codigopagamento);
+
+        // IMAGEM DO QR-CODE (Objeto QR-CODE e o TAMANHO[em pixels])
+        $imageQrCode = (new Output\Png)->output($obQrCode, 400);
+
+        ?>
+        <h3>QR-CODE</h3>
+        <a href="../pix/">
+            <button class="btn btn-warning">NOVO PIX</button>
+        </a>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="singlebutton">Código de Pagamento (copia e cola):</label>
+            <div class="col-md-4">
+                <?=$resposta->codigopagamento;?>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="singlebutton">Imagem QR-Code:</label>
+            <div class="col-md-4">
+                <img src="data:image/png;base64, <?=base64_encode($imageQrCode);?>">
+            </div>
+        </div>
+        <?php
+    }// fim do IF-POST
+
+}catch (Exception $e){
+    echo "ERROR: " . $e;
+}
+*/
+?>
+
+</body>
+</html> 
+-->
